@@ -5,6 +5,14 @@ def main():
   
     import matplotlib.pyplot as plt 
     from random import choice
+    
+     # Settings
+    st.set_page_config(page_title = 'Sierpinski-triangle') 
+    
+     # Title
+    st.title('Generate a Sierpinski-triangle')
+    st.write('Piers Walker 2022. https://github.com/pierswalker71')
+    
 
     # Define the three coordinate transformation methods
     def coord_change_method1(coord):
@@ -42,8 +50,8 @@ def main():
     
     
     markersize = st.number_input('marker size', min_value=0.01, max_value=1.0, value=0.5) 
-    colour = st.selectbox('colour', [x for x in colours.keys])
-    marker = st.selectbox('shape', [x for x in markers.keys])
+    colour = st.selectbox('colour', [x for x in colours.keys()])
+    marker = st.selectbox('shape', [x for x in markers.keys()])
 
     # Plot triangle
     fig, ax = plt.subplots(figsize=(15,15))
