@@ -30,7 +30,7 @@ def main():
         y_new = 0.5 * coord[1]
         return x_new, y_new
       
-    num_markers = st.number_input('number of points', min_value=100, max_value=500000, value=100000) 
+    num_markers = st.number_input('number of points (100 - 500000)', min_value=100, max_value=500000, value=100000) 
 
     # Generate coordinates
     x_values, y_values = [0], [0]
@@ -49,7 +49,7 @@ def main():
     markers = {'point':'.', 'circle':'o', 'star':'*', 'cross':'x'}
     
     
-    markersize = st.number_input('marker size', min_value=0.01, max_value=1.0, value=0.5) 
+    markersize = st.number_input('marker size (0.01 - 1.0)', min_value=0.01, max_value=1.0, value=0.5) 
     colour = st.selectbox('colour', [x for x in colours.keys()])
     marker = st.selectbox('shape', [x for x in markers.keys()])
 
@@ -59,6 +59,8 @@ def main():
 
     ax.plot(x_values, y_values, marker, markersize=markersize);
     ax.tick_params(left=False, bottom=False, labelleft=False, labelbottom=False)
+    
+    st.pyplot(fig)
     
     
 if __name__ == '__main__':
