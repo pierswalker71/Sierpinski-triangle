@@ -49,7 +49,7 @@ def main():
     markers = {'point':'.', 'circle':'o', 'star':'*', 'cross':'x'}
     
     
-    markersize = st.number_input('marker size (0.01 - 2.0)', min_value=0.01, max_value=2.0, value=0.5) 
+    markersize = st.number_input('marker size (0.01 - 5.0)', min_value=0.01, max_value=5.0, value=0.5) 
     colour = st.selectbox('colour', [x for x in colours.keys()])
     marker = st.selectbox('shape', [x for x in markers.keys()])
 
