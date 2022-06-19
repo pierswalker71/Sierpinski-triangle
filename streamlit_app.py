@@ -22,7 +22,7 @@ def main():
         y_new = 0.5 * coord[1]
         return x_new, y_new
       
-    num_markers = st.number_input('number of points', min_value=100, max_value=500000, value = 100000) 
+    num_markers = st.number_input('number of points', min_value=100, max_value=500000, value=100000) 
 
     # Generate coordinates
     x_values, y_values = [0], [0]
@@ -43,7 +43,7 @@ def main():
     
     markersize = st.number_input('marker size', min_value=0.01, max_value=1.0, value=0.5) 
     colour = st.selectbox('colour', [x for x in colours.keys])
-    marker = st.selectbox('shape', [x for x in markers.keys])'
+    marker = st.selectbox('shape', [x for x in markers.keys])
 
     # Plot triangle
     fig, ax = plt.subplots(figsize=(15,15))
