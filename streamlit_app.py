@@ -62,6 +62,8 @@ def main():
 
     ax.plot(x_values, y_values, marker, markersize=markersize);
     #ax.tick_params(left=False, bottom=False, labelleft=False, labelbottom=False)
+    ax.xlim([0,2])
+    ax.ylim([0,1])
     
     st.pyplot(fig)
     
