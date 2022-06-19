@@ -12,6 +12,9 @@ def main():
      # Title
     st.title('Generate a Sierpinski-triangle')
     st.write('Piers Walker 2022. https://github.com/pierswalker71')
+    st.write('The triangular fractal image can be generated through an iterative processs:\
+              from a starting position randomly select any one of the three vertices and move half the distance towards it.\
+              Plot the current position and repeat')  
     
 
     # Define the three coordinate transformation methods
@@ -30,7 +33,7 @@ def main():
         y_new = 0.5 * coord[1]
         return x_new, y_new
       
-    num_markers = st.number_input('number of points (100 - 500000)', min_value=100, max_value=500000, value=100000) 
+    num_markers = st.number_input('number of points (1 - 500000)', min_value=1, max_value=500000, value=100000) 
 
     # Generate coordinates
     x_values, y_values = [0], [0]
