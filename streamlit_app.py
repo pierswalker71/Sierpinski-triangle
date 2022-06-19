@@ -14,7 +14,7 @@ def main():
     st.write('Piers Walker 2022. https://github.com/pierswalker71')
     st.write('The Sierpinski triangular fractal image (https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle) can be generated through an iterative processs:')
     st.write('From a starting position randomly select any one of the three vertices and move half the distance towards it.\
-              Plot the current position and repeat')  
+              Plot the current position and repeat.')  
     
 
     # Define the three coordinate transformation methods
