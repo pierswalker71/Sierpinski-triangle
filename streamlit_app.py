@@ -61,7 +61,7 @@ def main():
     marker = colours[colour] + markers[marker]
 
     ax.plot(x_values, y_values, marker, markersize=markersize);
-    ax.tick_params(left=False, bottom=False, labelleft=False, labelbottom=False)
+    #ax.tick_params(left=False, bottom=False, labelleft=False, labelbottom=False)
     
     st.pyplot(fig)
     
